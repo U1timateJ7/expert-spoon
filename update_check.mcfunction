@@ -1,0 +1,2 @@
+$execute if score HasBroadcastUpdateMessage value matches ..0 if score Version value matches ..1 run tellraw @a ["",{"text":"A new version of this map has been released!","italic":true,"clickEvent":{"action":"open_url","value":"https://www.curseforge.com/minecraft/worlds/five-nights-at-freddys"}},{"text":"\n"},{"text":"Current Version:","color":"gold"},{"text":" $(version)\n"},{"text":"Latest Version:","color":"green"},{"text":" v2.0.0"}]
+scoreboard players set HasBroadcastUpdateMessage value 1
